@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="fr-CA">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Application RTC | Vos titres de transport sur mobile</title>
+<meta name="description" content="Découvrez l’application mobile RTC : parcourir les titres, les retrouver dans « Mes titres » et suivre leur validité après activation. Site informatif.">
+<meta property="og:type" content="website">
+<meta property="og:title" content="Application RTC | Vos titres RTC, à portée de main">
+<meta property="og:description" content="Parcourez les titres, retrouvez-les dans « Mes titres » et suivez leur validité après activation.">
+<meta name="theme-color" content="#0F2F6D">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+<link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css" rel="stylesheet">
+<link href="style.css" rel="stylesheet">
+<!-- À CONFIRMER AVANT PUBLICATION : droit d’utiliser le logo et les images, favicon, coordonnées de contact, liens légaux. -->
+</head>
+<body>
+<a class="visually-hidden-focusable skip-link" href="#contenu">Aller au contenu</a>
+
+<header class="sticky-top">
+  <nav class="navbar navbar-expand-md bg-white border-bottom" aria-label="Navigation principale">
+    <div class="container">
+      <a class="navbar-brand d-flex align-items-center gap-2" href="#accueil">
+        <img src="logo.png" alt="Logo de l’application RTC" height="36">
+        <span class="fw-bold text-navy">Application RTC</span>
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#menu" aria-controls="menu" aria-expanded="false" aria-label="Ouvrir le menu">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="menu">
+        <ul class="navbar-nav ms-auto align-items-md-center gap-md-1">
+          <li class="nav-item"><a class="nav-link" href="#fonctionnalites">Fonctionnalités</a></li>
+          <li class="nav-item"><a class="nav-link" href="#comment-ca-marche">Comment ça marche</a></li>
+          <li class="nav-item"><a class="nav-link" href="#telecharger">Télécharger</a></li>
+          <li class="nav-item ms-md-2 my-2 my-md-0"><a class="btn btn-rtc" href="#telecharger" data-store="android">Télécharger l’application</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+</header>
+
+<main id="contenu">
+
+  <!-- Accueil -->
+  <section id="accueil" class="hero py-5">
+    <div class="container">
+      <div class="row align-items-center g-5">
+        <div class="col-lg-9">
+          <h1 class="display-4 fw-bold text-navy">Vos titres RTC, à portée de main</h1>
+          <p class="lead mt-3 measure">Découvrez une application mobile pour parcourir les titres de transport, retrouver vos titres et suivre leur validité après activation.</p>
+          <div class="mt-4 d-flex flex-wrap gap-3 store-group">
+            <a class="btn btn-store" href="#telecharger" data-store="android">
+              <i class="bi bi-android2" aria-hidden="true"></i>
+              <span><small>Fichier d’installation APK</small>Télécharger pour Android</span>
+            </a>
+            <a class="btn btn-store disabled" aria-disabled="true" tabindex="-1" data-store="ios">
+              <i class="bi bi-apple" aria-hidden="true"></i>
+              <span><small>Bientôt disponible</small>Télécharger sur l’App Store</span>
+            </a>
+          </div>
+          <p class="dl-status small mt-3 mb-0" role="status" aria-live="polite"></p>
+          <p class="small text-muted mt-2 measure">Application en cours de développement. Les fonctions présentées sont celles de la version actuelle.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Fonctionnalités -->
+  <section id="fonctionnalites" class="py-5 bg-white">
+    <div class="container">
+      <h2 class="fw-bold text-navy">Une application, des titres plus faciles à suivre</h2>
+      <p class="measure text-muted">Voici ce que vous pouvez faire dans l’application mobile.</p>
+      <ul class="list-unstyled feature-list mt-4">
+        <li><i class="bi bi-shop" aria-hidden="true"></i><div><h3>Une boutique de titres</h3><p>Retrouvez les catégories de titres par réseau et par profil, au même endroit.</p></div></li>
+        <li><i class="bi bi-cart3" aria-hidden="true"></i><div><h3>Un panier</h3><p>Consultez les titres sélectionnés, leurs quantités et le total avant de valider.</p></div></li>
+        <li><i class="bi bi-ticket-perforated" aria-hidden="true"></i><div><h3>« Mes titres »</h3><p>Retrouvez les titres disponibles et ceux qui sont déjà activés.</p></div></li>
+        <li><i class="bi bi-check2-circle" aria-hidden="true"></i><div><h3>Une activation titre par titre</h3><p>Un titre s’active au moment de valider une correspondance. Vos autres titres restent intacts.</p></div></li>
+        <li><i class="bi bi-hourglass-split" aria-hidden="true"></i><div><h3>Un suivi de la validité</h3><p>Visualisez la durée et la progression du titre activé.</p></div></li>
+      </ul>
+      <p class="small text-muted measure mb-0">Le panier de l’application n’est pas présenté ici comme un paiement en ligne. Aucune recharge automatique ni synchronisation bancaire n’est annoncée.</p>
+    </div>
+  </section>
+
+  <!-- Comment ça marche -->
+  <section id="comment-ca-marche" class="py-5">
+    <div class="container">
+      <h2 class="fw-bold text-navy">Comment ça marche</h2>
+      <p class="measure text-muted">Voici le parcours dans l’application mobile. Ces étapes ne se font pas sur cette page web.</p>
+      <ol class="row g-4 list-unstyled steps mt-2">
+        <li class="col-sm-6 col-lg-3"><span class="step-n">1</span><h3>Créer un compte</h3><p>Créez un compte avec votre courriel et un mot de passe, ou connectez-vous.</p></li>
+        <li class="col-sm-6 col-lg-3"><span class="step-n">2</span><h3>Saisir le code</h3><p>Entrez le code de validation à six chiffres fourni par l’administrateur.</p></li>
+        <li class="col-sm-6 col-lg-3"><span class="step-n">3</span><h3>Choisir ses titres</h3><p>Parcourez la boutique, choisissez des titres et retrouvez-les dans « Mes titres ».</p></li>
+        <li class="col-sm-6 col-lg-3"><span class="step-n">4</span><h3>Valider une correspondance</h3><p>Pour un titre non activé, choisissez « Valider une correspondance » pour ouvrir son compte à rebours.</p></li>
+      </ol>
+      <p class="mt-4 mb-0 measure"><strong>À savoir :</strong> l’activation concerne seulement le titre sélectionné. Elle ne supprime pas les autres titres.</p>
+    </div>
+  </section>
+
+  <!-- Catégories -->
+  <section id="titres" class="py-5 bg-white">
+    <div class="container">
+      <h2 class="fw-bold text-navy">Des titres selon votre besoin</h2>
+      <p class="measure">Consultez les catégories RTC, STLévis, STAC et RTC + Communauto proposées dans l’application. La disponibilité des titres et les conditions applicables doivent être vérifiées dans l’application et auprès du réseau concerné.</p>
+      <ul class="list-unstyled d-flex flex-wrap gap-2 chips my-4">
+        <li>RTC – Général</li>
+        <li>RTC – 14-18 ans</li>
+        <li>RTC – Étudiant +</li>
+        <li>RTC – 65+</li>
+        <li>STLévis</li>
+        <li>RTC + Communauto</li>
+        <li>RTC – ÉquiMobilité</li>
+        <li>STAC – ÉquiMobilité</li>
+      </ul>
+      <p class="small text-muted measure mb-0">Selon les titres, on trouve des passages, des titres d’une journée ou de plusieurs jours, des titres mensuels, des titres de 90 jours, des titres de fin de semaine et certains lots de billets. Certains titres peuvent demander des justificatifs : les conditions sont à vérifier auprès du réseau concerné. Les prix ne sont pas affichés ici, car ils peuvent changer.</p>
+    </div>
+  </section>
+
+  <!-- Mes titres -->
+  <section id="mes-titres" class="py-5">
+    <div class="container">
+      <div class="row g-5 align-items-center">
+        <div class="col-lg-5">
+          <h2 class="fw-bold text-navy">Tous vos titres au même endroit</h2>
+          <p>Dans « Mes titres », la liste « Titres en cours » montre les titres prêts à être activés et ceux qui le sont déjà. « Titres restants » regroupe ceux qui n’ont pas encore été activés.</p>
+          <p>Vous pouvez avoir plusieurs titres à la fois et en activer un sans annuler les autres. Un titre expiré est retiré des titres en cours.</p>
+          <p class="small text-muted mb-0">Dans la version actuelle, les titres sont conservés sur l’appareil. Aucune sauvegarde dans le nuage ni entre appareils n’est annoncée. Le code graphique de l’écran du titre est illustratif : il n’est pas présenté comme un billet officiel.</p>
+        </div>
+        <div class="col-lg-7">
+          <div class="row g-4">
+            <div class="col-6">
+              <figure class="app-preview app-preview-sm mb-2">
+                <img src="images (1).jpeg" alt="Titre STLévis – 1 passage affiché sur un téléphone" loading="lazy" width="173" height="291">
+                <figcaption class="small text-center">STLévis – 1 passage</figcaption>
+              </figure>
+            </div>
+            <div class="col-6">
+              <figure class="app-preview app-preview-sm mb-2">
+                <img src="images.jpeg" alt="Titre STLévis – AdoBus affiché sur un téléphone" loading="lazy" width="357" height="560">
+                <figcaption class="small text-center">STLévis – AdoBus</figcaption>
+              </figure>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FAQ -->
+  <section id="faq" class="py-5 bg-white">
+    <div class="container">
+      <h2 class="fw-bold text-navy mb-4">Questions fréquentes</h2>
+      <div class="accordion measure-wide" id="faqListe">
+        <div class="accordion-item">
+          <h3 class="accordion-header"><button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#q1" aria-expanded="false" aria-controls="q1">Comment accéder à l’application ?</button></h3>
+          <div id="q1" class="accordion-collapse collapse" data-bs-parent="#faqListe"><div class="accordion-body">Créez un compte ou connectez-vous, puis saisissez le code de validation à six chiffres fourni par l’administrateur.</div></div>
+        </div>
+        <div class="accordion-item">
+          <h3 class="accordion-header"><button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#q2" aria-expanded="false" aria-controls="q2">Où retrouver mes titres ?</button></h3>
+          <div id="q2" class="accordion-collapse collapse" data-bs-parent="#faqListe"><div class="accordion-body">Dans la section « Mes titres » de l’application.</div></div>
+        </div>
+        <div class="accordion-item">
+          <h3 class="accordion-header"><button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#q3" aria-expanded="false" aria-controls="q3">Est-ce que l’activation d’un titre supprime les autres ?</button></h3>
+          <div id="q3" class="accordion-collapse collapse" data-bs-parent="#faqListe"><div class="accordion-body">Non. Chaque titre est conservé séparément dans l’application.</div></div>
+        </div>
+        <div class="accordion-item">
+          <h3 class="accordion-header"><button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#q4" aria-expanded="false" aria-controls="q4">Où trouver les conditions et la validité officielle d’un titre ?</button></h3>
+          <div id="q4" class="accordion-collapse collapse" data-bs-parent="#faqListe"><div class="accordion-body">Auprès du réseau concerné (RTC, STLévis, STAC, etc.). Ce site ne publie ni prix ni conditions officielles.</div></div>
+        </div>
+        <div class="accordion-item">
+          <h3 class="accordion-header"><button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#q5" aria-expanded="false" aria-controls="q5">Où télécharger l’application ?</button></h3>
+          <div id="q5" class="accordion-collapse collapse" data-bs-parent="#faqListe"><div class="accordion-body">Pour Android, le fichier d’installation (APK) se télécharge dans la section ci-dessous. La version iPhone n’est pas encore disponible.</div></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Téléchargement -->
+  <section id="telecharger" class="download py-5 text-white">
+    <div class="container text-center">
+      <h2 class="fw-bold">Prêt à découvrir l’application ?</h2>
+      <p class="mx-auto measure">Téléchargez la version Android en un clic. La version iPhone sera annoncée ici quand elle sera disponible.</p>
+      <div class="d-flex flex-wrap justify-content-center gap-3 mt-4 store-group on-dark">
+        <a class="btn btn-store" href="#telecharger" data-store="android">
+          <i class="bi bi-android2" aria-hidden="true"></i>
+          <span><small>Fichier d’installation APK</small>Télécharger pour Android</span>
+        </a>
+        <a class="btn btn-store disabled" aria-disabled="true" tabindex="-1" data-store="ios">
+          <i class="bi bi-apple" aria-hidden="true"></i>
+          <span><small>Téléchargement bientôt disponible</small>Télécharger sur l’App Store</span>
+        </a>
+      </div>
+      <p class="dl-status mt-3 mb-0" role="status" aria-live="polite"></p>
+      <p class="small mt-3 mx-auto measure opacity-75 mb-0">Après le téléchargement, ouvrez le fichier .apk. Android peut vous demander d’autoriser l’installation depuis cette source.</p>
+    </div>
+  </section>
+</main>
+
+<footer class="py-4 bg-white border-top">
+  <div class="container d-flex flex-column flex-md-row align-items-md-center justify-content-between gap-2">
+    <div class="d-flex align-items-center gap-2">
+      <img src="logo.png" alt="" height="28">
+      <strong class="text-navy">Application RTC</strong>
+    </div>
+    <p class="small text-muted mb-0">Site informatif. Il ne s’agit pas du site officiel du RTC.</p>
+  </div>
+</footer>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+<script src="script.js"></script>
+</body>
+</html>

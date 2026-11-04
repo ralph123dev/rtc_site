@@ -1,0 +1,232 @@
+:root {
+ --navy: #0F2F6D;
+ --blue: #17409B;
+ --ticket: #1B3F94;
+ --bg: #F2F2F2;
+ --bs-body-font-family: "Inter", system-ui, -apple-system, "Segoe UI", Arial, sans-serif;
+ --bs-body-color: #1c2433;
+ --bs-link-color: var(--blue);
+}
+
+html {
+ scroll-padding-top: 72px;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+ html {
+  scroll-behavior: smooth;
+ }
+}
+
+body {
+ background: var(--bg);
+}
+
+.text-navy {
+ color: var(--navy);
+}
+
+.measure {
+ max-width: 60ch;
+}
+
+.measure-wide {
+ max-width: 760px;
+}
+
+.skip-link:focus {
+ position: fixed;
+ top: .5rem;
+ left: .5rem;
+ z-index: 2000;
+ background: #fff;
+ padding: .6rem 1rem;
+ border-radius: .5rem;
+}
+
+:focus-visible {
+ outline: 3px solid #f5a524;
+ outline-offset: 2px;
+}
+
+.navbar .nav-link {
+ color: var(--navy);
+ font-weight: 500;
+ padding: .7rem .75rem;
+}
+
+.btn-rtc {
+ background: var(--blue);
+ color: #fff;
+ font-weight: 600;
+ padding: .6rem 1.1rem;
+ border-radius: .6rem;
+}
+
+.btn-rtc:hover {
+ background: var(--navy);
+ color: #fff;
+}
+
+/* Boutons de téléchargement */
+.btn-store {
+ display: inline-flex;
+ align-items: center;
+ gap: .75rem;
+ text-align: left;
+ min-height: 56px;
+ padding: .6rem 1.2rem;
+ border-radius: .8rem;
+ background: var(--blue);
+ color: #fff;
+ font-weight: 700;
+ line-height: 1.2;
+}
+
+.btn-store i {
+ font-size: 1.7rem;
+}
+
+.btn-store small {
+ display: block;
+ font-size: .72rem;
+ font-weight: 500;
+ opacity: .85;
+}
+
+.btn-store:hover {
+ background: var(--navy);
+ color: #fff;
+}
+
+.btn-store.disabled {
+ background: #6b7a99;
+ opacity: .75;
+}
+
+.on-dark .btn-store {
+ background: #fff;
+ color: var(--navy);
+}
+
+.on-dark .btn-store:hover {
+ background: var(--bg);
+ color: var(--navy);
+}
+
+.on-dark .btn-store.disabled {
+ background: rgba(255, 255, 255, .25);
+ color: #fff;
+}
+
+.dl-status:empty {
+ display: none;
+}
+
+.hero .dl-status {
+ color: var(--navy);
+ font-weight: 500;
+}
+
+/* Aperçus des écrans de l’application */
+.app-preview {
+ margin: 0 auto;
+}
+
+.app-preview img {
+ display: block;
+ width: 100%;
+ height: auto;
+}
+
+.app-preview-sm {
+ max-width: 220px;
+}
+
+/* Fonctionnalités */
+.feature-list li {
+ display: flex;
+ gap: 1rem;
+ padding: 1.1rem 0;
+ border-top: 1px solid #dde1ea;
+}
+
+.feature-list li:last-child {
+ border-bottom: 1px solid #dde1ea;
+}
+
+.feature-list i {
+ font-size: 1.5rem;
+ color: var(--blue);
+ line-height: 1.3;
+}
+
+.feature-list h3 {
+ font-size: 1.05rem;
+ font-weight: 700;
+ margin: 0 0 .2rem;
+ color: var(--navy);
+}
+
+.feature-list p {
+ margin: 0;
+}
+
+@media (min-width: 992px) {
+ .feature-list {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  column-gap: 3rem;
+ }
+
+ .feature-list li:nth-last-child(2) {
+  border-bottom: 1px solid #dde1ea;
+ }
+}
+
+/* Étapes */
+.steps h3 {
+ font-size: 1.05rem;
+ font-weight: 700;
+ color: var(--navy);
+}
+
+.steps p {
+ margin: 0;
+}
+
+.step-n {
+ display: grid;
+ place-items: center;
+ width: 2.4rem;
+ height: 2.4rem;
+ margin-bottom: .75rem;
+ border-radius: 50%;
+ background: var(--blue);
+ color: #fff;
+ font-weight: 700;
+}
+
+/* Catégories */
+.chips li {
+ padding: .5rem 1rem;
+ border: 1px solid var(--blue);
+ border-radius: 2rem;
+ color: var(--navy);
+ font-weight: 600;
+ background: #fff;
+}
+
+/* Téléchargement */
+.download {
+ background: linear-gradient(rgba(15, 47, 109, .93), rgba(15, 47, 109, .93)), var(--navy);
+}
+
+.download .dl-status {
+ font-weight: 500;
+}
+
+.accordion-button:not(.collapsed) {
+ color: var(--navy);
+ background: #e8edf8;
+}
